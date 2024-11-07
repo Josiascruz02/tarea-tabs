@@ -1,0 +1,237 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+header{
+  background: #0973D7;
+  padding: 15px;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+ul.tabs{
+  list-style: none;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+ul.tabs li{
+background: #fefefe;
+width: 25%;
+text-align: center;
+margin: 10px;
+}
+ul.tabs li a{
+  color: #333;
+  text-decoration: none;
+  /*display: block;*/
+  padding: 15px 30px;
+/* para que el puntero de click a todo el contenido */
+  display: inline-block;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 5px;
+}
+
+ul.tabs li a:hover{
+  background-color: #059BFD;
+  color: #fefefe;
+}
+.tab_content ul{
+  padding: 25px;
+}
+
+html ul.tabs li.active {
+  background-color: #0973D7;
+  color: #fefefe;
+  border-radius: 5px;
+}
+html ul.tabs li.active a:hover {
+  background-color: #0973D7;
+  color: #fefefe;
+}
+
+
+/**/
+.seccion_imgs {
+  background-color: #F0F3F8;
+  display: grid;
+  grid-gap: 15px;
+  grid-template: repeat(3, auto) / repeat(3, auto);
+  grid-template-areas: "home mapa mapa" "home1 unit3 junio";
+  padding: 15px;
+}
+.seccion_imgs figure {
+  margin: 0;
+}
+.seccion_imgs figure img {
+  border-radius: 10px;
+  width: 100%;
+}
+.img1{
+  grid-area: home;
+}
+.img2{
+  grid-area: mapa;
+}
+.img3{
+  grid-area: home1;
+}
+.img4{
+  grid-area: unit3;
+}
+.img5{
+  grid-area: junio;
+}
+
+.seccion_imgs2 {
+  background-color: #F0F3F8;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(1, auto) / repeat(2, auto);
+  grid-template-areas: "home unit3";
+  padding: 15px;
+}
+.seccion_imgs2 figure {
+  margin: 0px;
+  width: 70%;
+}
+.seccion_imgs2 figure img {
+  border-radius: 10px;
+  width: 100%;
+}
+.img12{
+  grid-area: home;
+}
+.img42{
+  grid-area: unit3;
+}
+
+.seccion_imgs3 {
+  background-color: #F0F3F8;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  grid-template-areas: "mapa3 mapa3" "junio nada";
+  padding: 15px;
+}
+.seccion_imgs3 figure {
+  margin: 0px;
+  width: 70%;
+}
+.seccion_imgs3 figure img {
+  border-radius: 10px;
+  width: 100%;
+}
+.img13{
+  grid-area: mapa3;
+}
+.img43{
+  grid-area: junio;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner:hover .info {
+  top: 0%;
+  background-color: rgba(9, 115, 215, 0.8);
+  border-radius: 7px;
+}
+.info {
+  background-color: #fffbfbfa;
+  color: #0e0d0d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  transition: all 0.5s linear;
+  line-height: .5;
+  text-align: center;
+}
+.icono_lupa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  width: 80px;
+  height: 80px;
+}
+.icono_lupa i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  font-size: 80px;
+}
+#leter{
+  color: #fefefe;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#Messenger{
+  color: #fefefe;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.seccion_imgs4 {
+  background-color: #F0F3F8;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(1, auto) / repeat(2, auto);
+  grid-template-areas: "unit3 home";
+  padding: 15px;
+}
+.seccion_imgs4 figure {
+  margin: 0px;
+  width: 70%;
+}
+.seccion_imgs4 figure img {
+  border-radius: 10px;
+  width: 100%;
+}
+.img12{
+  grid-area: home;
+}
+.img42{
+  grid-area: unit3;
+}
+
+footer{
+  background: #0973D7;
+  padding: 25px;
+  width: 100% ;
+}
